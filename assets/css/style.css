@@ -22,11 +22,39 @@ a {
   margin-right: auto;
 }
 
+.btn {
+  color: #fff;
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 600;
+  padding: 0 41px;
+  min-width: 186px;
+  line-height: 68px;
+  border-radius: 14px;
+  background: #1ebfc1;
+  box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.05);
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
 /* ==========Header======== */
 .header .body {
   display: flex;
   align-items: center;
   padding: 52px 0 8px;
+  /* background-color: beige; */
+}
+
+.header {
+  background: #fff;
+}
+
+.header .fixed {
+  z-index: 1;
+  position: sticky;
+  top: -44px;
 }
 
 .nav {
@@ -88,4 +116,88 @@ a {
   font-size: 16px;
   font-weight: 400;
   margin-left: 157.5px;
+}
+
+/* ======hero====== */
+.hero {
+  /* background-color: aqua; */
+  padding: 42px 0 79px;
+}
+
+.hero .body {
+  display: flex;
+}
+
+.hero .content-block {
+  width: 50%;
+}
+
+.hero .content-block .top-title {
+  margin-top: 93px;
+  color: #767e7e;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.hero .content-block .title {
+  margin-top: 18px;
+  max-width: 458px;
+  color: #0d1111;
+  font-size: 62px;
+  font-weight: 700;
+  line-height: 72px; /* 116.129% */
+}
+
+.hero .content-block .desc {
+  margin-top: 46px;
+  width: 374px;
+  color: #9da6a5;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 32px; /* 177.778% */
+}
+
+.hero .content-block .desc-span {
+  display: inline-block;
+}
+
+.hero .content-block .cta-group {
+  display: flex;
+  margin-top: 52px;
+  align-items: center;
+}
+
+.hero .content-block .play-video {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 50px;
+  width: 62px;
+  height: 62px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0px 22px 50px 0px rgba(0, 0, 0, 0.05);
+}
+
+.hero .content-block .play-video:hover {
+  background: #eee;
+  box-shadow: 0px 0px 0px 0px rgba(196, 26, 134, 0.5);
+  color: #fff;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+/* ===hero right=== */
+.hero .media-block {
+  position: relative;
+  width: 50%;
+}
+
+.hero .media-block .media {
+  width: 576px;
+  height: 631px;
+  flex-shrink: 0;
+  object-fit: cover;
 }
